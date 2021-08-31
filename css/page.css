@@ -1,0 +1,92 @@
+/* 메인 */
+/* 메인 페이지 공통 */
+.main_line{position: relative;}
+.main_line::after{content: ''; left: 0; top: 50%; position: absolute; width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.4);}
+.main_line span{display: inline-block; background: white; padding: 0 70px; position: relative; z-index: 1;}
+[class^="main"][class*="Area"] > h2{text-align: center;}
+[class^="main"][class*="Area"] > h2 + .main_line{text-align: center;}
+[class^="main"][class*="Area"]{margin-bottom: 100px;}
+[class^="main"][class*="Area"] h2{font-size: 42px; font-weight: 700;}
+[class^="main"][class*="Area"] h2:not([class="main_line"]){margin-bottom: 35px;}
+[class^="main"][class*="Area"] h2 + .main_line{font-size: 24px;}
+[class^="main"][class*="Area"] .main_line{margin-bottom: 95px;}
+
+[class^="main"][class*="Area"] .bx-wrapper .bx-prev{left: -143px;}
+[class^="main"][class*="Area"] .bx-wrapper .bx-next{right: -135px;}
+
+.main_imgArea{padding: 75px 0;}
+.main_imgArea > div{padding: 65px 0; height: 350px; display: flex; flex-direction: column; align-items: flex-start;}
+.main_imgArea > div h2{margin-bottom: 60px;}
+.main_imgArea > div p{font-size: 20px; line-height: 33px;}
+.main_imgArea > div a{margin-top: auto;}
+
+.layout4::after{content: ''; display: block; clear: both;}
+.layout4 li{float: left; width: 22.5%; border: 1px solid #a9a9a9; box-sizing: border-box;}
+.layout4 li:not(:last-child){margin-right: 3.33%;}
+
+/* 메인 슬라이더 */
+.mainSliderArea{position: relative;}
+.mainSliderArea .mainSlider > div{background-repeat: no-repeat; background-position: center; background-size: 100%;}
+.mainSliderArea .mainSlider .mainSlider01{height: 910px; display: flex; justify-content: flex-end; align-items: center; background-image: url('../images/main_SliderBG.png');}
+.mainSliderArea .mainSlider .mainSlider01 .textBox{background-color: rgba(0, 0, 0, 0.8); border-radius: 100px; color: white; display: flex; align-items: center; padding: 42px 100px; margin-right: 130px; position: relative;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 43px; font-weight: 700;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > div > div{position: absolute; top: calc(50% - 25px);}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderPrev{left: 25px;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderNext{right: 25px;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > div > div a{font-size: 50px;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox p{font-size: 17px; line-height: 23px; max-width: 385px; margin: 0 55px; opacity: 0.8; letter-spacing: -2px;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox a{color: white;}
+.mainSliderArea .mainSlider .mainSlider01 .textBox > a{font-size: 21px; font-weight: 700;}
+.mainSliderArea ul{position: absolute; left: 0; bottom: 0; width: 100%; pointer-events: none;}
+
+
+.main_menuArea ul{display: flex; justify-content: center; margin-bottom: 70px;}
+.main_menuArea ul li{padding: 0 5px; margin: 0 45px; }
+.main_menuArea ul li a{display: block; font-size: 26px; font-weight: 700;}
+.main_menuArea ul li.active{position: relative;}
+.main_menuArea ul li.active::after{content: ''; position: absolute; left: 0; bottom: -3px; width: 100%; height: 14px; background-color: #efb81b; border-radius: 100px;}
+.main_menuArea ul li.active a{position: relative; z-index: 1;}
+
+.main_menuArea .menuSliderArea .slider > div{text-align: center;}
+.main_menuArea .menuSliderArea .slider > div img{margin-bottom: 25px;}
+.main_menuArea .menuSliderArea .slider > div strong{display: block; font-size: 24px; font-weight: 700; margin-bottom: 20px;}
+.main_menuArea .menuSliderArea .slider > div p{font-size: 20px; line-height: 28px; max-width: 240px; margin: 0 auto; letter-spacing: -1.5px;}
+
+
+
+.main_historyArea{background-color: #f2f0e6;}
+.main_historyArea > div{position: relative;}
+.main_historyArea > div::after{content: ''; position: absolute; right: 0; top: 0; width: 46%; padding-top: 31%; background: url('../images/main_history.png') no-repeat center / cover;}
+
+
+
+.main_storeArea .slider figure{display: flex;}
+.main_storeArea .slider figure img{border: 1px solid #a9a9a9; margin-right: 8.6538%;}
+.main_storeArea .slider figure figcaption{display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+.main_storeArea .slider figure figcaption b{font-size: 20px; margin-bottom: 40px;}
+.main_storeArea .slider figure figcaption b::after{background-color: black;}
+.main_storeArea .slider figure figcaption h3{font-size: 40px; margin-bottom: 50px;}
+.main_storeArea .slider figure figcaption address{font-style: normal; font-size: 20px;}
+.main_storeArea .slider figure figcaption address > *{display: block; margin-top: 25px;}
+
+
+.main_noticeArea ul li{padding: 55px 20px 55px 40px; font-size: 20px; height: 350px; display: flex; flex-direction: column;}
+.main_noticeArea ul li strong{display: block; font-weight: 700; margin-bottom: 30px;}
+.main_noticeArea ul li p{line-height: 33px; }
+.main_noticeArea ul li time{opacity: 0.5; margin-top: auto;}
+
+
+.main_worldArea{background: url('../images/main_world.png') no-repeat center / cover; color: white;}
+
+
+.main_franchiseArea{text-align: center;}
+.main_franchiseArea div{padding: 80px 0 60px;}
+.main_franchiseArea div strong{font-size: 82px; font-weight: 700; margin-bottom: 30px;}
+.main_franchiseArea div strong{position: relative;}
+.main_franchiseArea div strong::after{content: ''; position: absolute; left: 0; bottom: 0px; width: 100%; height: 14px; background-color: #efb81b; border-radius: 100px;}
+.main_franchiseArea div strong mark{position: relative; z-index: 1;}
+.main_franchiseArea div p{font-size: 20px; line-height: 33px; max-width: 1000px; margin: 0 auto 60px;}
+
+
+.main_storeListArea ul li img{width: 100%;}
+.main_storeListArea ul li p{font-size: 20px; line-height: 31px; padding: 20px 35px;}
