@@ -35,7 +35,7 @@ header > div h1 a{display: block;}
 header > div h1 a img{width: 100%;}
 header > div nav ul::after{content: ''; display: block; clear: both;}
 header > div nav ul li{float: left;}
-header > div nav ul li a{font-size: 22px; display: block; line-height: 142px; padding: 0 30px;}
+header > div nav ul li a{font-size: 22px; font-weight: 700; display: block; line-height: 142px; padding: 0 30px;}
 
 .mainPage header.active{z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
 
