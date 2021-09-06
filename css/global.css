@@ -1,6 +1,10 @@
 /* header에서만 사용시 삭제 */
 .width1824{max-width: 1824px; margin: 0 auto;}
 .width1560{max-width: 1560px; margin: 0 auto;}
+/* sub */
+.width1200{max-width: 1200px; margin: 0 auto;}
+
+.textHidden{height: 0.001px; overflow: hidden; visibility: hidden;}
 
 /* slider basic */
 .bx-wrapper{box-shadow: none; border: none; margin-bottom: 0;}
