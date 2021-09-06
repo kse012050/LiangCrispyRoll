@@ -24,6 +24,12 @@
 .layout4 li{float: left; width: 22.5%;}
 .layout4 li:not(:nth-child(4n)){margin-right: 3.33%;}
 
+.layout4_1{text-align: left;}
+.layout4_1::after{content: ''; display: block; clear: both;}
+.layout4_1 li{float: left; width: calc((100% - (2.5% * 3)) / 4); padding: 30px; box-sizing: border-box;}
+.layout4_1 li:not(:nth-child(4n)){margin-right: 2.5%;}
+.layout4_1 li:not(:nth-child(-n + 4)){margin-top: 2.5%;}
+
 .layout3_1{display: flex; flex-wrap: wrap;}
 .layout3_1 li{width: 29%; box-sizing: border-box;}
 .layout3_1 li:not(:nth-child(3n)){margin-right: 6.5%;}
@@ -54,7 +60,7 @@
 .noticeBox li p{line-height: 33px;}
 .noticeBox li time{opacity: 0.5; margin-top: auto;}
 
-/* 창업 */
+/* 추천 매장 */
 .franchiseBox{text-align: left;}
 .franchiseBox li{border: 1px solid #a9a9a9; box-sizing: border-box;}
 .franchiseBox li img{width: 100%;}
@@ -218,4 +224,32 @@
 .historyArea .modelArea{padding: 125px 0 65px; background: url('../images/about_historyBG02.png') no-repeat center / cover; color: white; text-align: left;}
 
 
-.franchiseArea > div > p{font-size: 21px; padding: 50px 0;}
+/* 프렌차이즈  */
+.franchiseArea > div > p{font-size: 21px; line-height: 31px; padding: 45px 0;}
+
+.franchiseArea .joinUsArea{border-top: 3px solid black;}
+.franchiseArea .joinUsArea ul{margin-bottom: 60px;}
+.franchiseArea .joinUsArea ul.joinUsBox li{position: relative; height: 200px; background-color: #efb81b;}
+.franchiseArea .joinUsArea ul.joinUsBox li strong{font-size: 30px; font-weight: 700; line-height: 38px;}
+.franchiseArea .joinUsArea ul.joinUsBox li img{position: absolute; bottom: 20px; right: 30px; max-width: 48px;}
+
+.questionBox{height: 100%; padding: 120px 0; box-sizing: border-box; overflow: auto;}
+.questionBox fieldset legend{font-size: 58px; font-weight: 700; margin-bottom: 70px;}
+.questionBox fieldset ul{max-width: 570px; margin: 0 auto; text-align: left; margin-bottom: 50px;}
+.questionBox fieldset ul li{display: flex; justify-content: space-between; align-items: center;}
+.questionBox fieldset ul li.required label::after{content: '*'; display: inline-block; color: #eb0606; vertical-align: bottom;}
+.questionBox fieldset ul li:not(:last-child){margin-bottom: 60px;}
+.questionBox fieldset ul li > label{ width: 105px; font-size: 26px; font-weight: 500;}
+.questionBox fieldset ul li > label + *{ width: calc((100% - 100px) * 0.93); }
+.questionBox fieldset ul li > label + *:not(div){font-size: 26px; font-weight: 400; padding: 10px 10px; box-sizing: border-box; border-width: 0 0 1px 0; border-style: solid; }
+.questionBox fieldset ul li > label + select{border-color: black;}
+.questionBox fieldset ul li > label + input{border-color: #cccccc;}
+.questionBox fieldset ul li > div{display: flex; justify-content: space-between;}
+.questionBox fieldset ul li > div > *{line-height: 46px;}
+.questionBox fieldset ul li > div input[type="file"]{display: none;}
+.questionBox fieldset ul li > div input[type="text"]{width: 77%; font-size: 20px; padding: 0 15px; box-sizing: border-box;}
+.questionBox fieldset ul li > div label{width: 21%; font-size: 20px; font-weight: 500; color: white; background-color: #333333; display: flex; justify-content: center; align-items: center;}
+.questionBox fieldset input[type="checkbox"]{display: none;}
+.questionBox fieldset input[type="checkbox"] + label{font-size: 22px; color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; margin-bottom: 25px;}
+.questionBox fieldset input[type="checkbox"] + label::before{content: ''; width: 22px; height: 22px; border:1px solid #cccccc; margin-right: 10px;}
+.questionBox fieldset input[type="submit"]{width: 260px; height: 75px; font-size: 24px; font-weight: 700; background-color: #efb81b; border: none;}
