@@ -54,6 +54,12 @@
 .noticeBox li p{line-height: 33px;}
 .noticeBox li time{opacity: 0.5; margin-top: auto;}
 
+/* 창업 */
+.franchiseBox{text-align: left;}
+.franchiseBox li{border: 1px solid #a9a9a9; box-sizing: border-box;}
+.franchiseBox li img{width: 100%;}
+.franchiseBox li p{font-size: 20px; line-height: 31px; padding: 20px 35px;}
+
 /* 게시판 페이저 */
 .pageLinkBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
 .pageLinkBox a{display: flex; justify-content: center; align-items: center; width: 32px; height: 32px;}
@@ -64,6 +70,21 @@
 .pageLinkBox ol{display: flex; align-items: center; margin: 0 20px;}
 .pageLinkBox ol li a{font-size: 16px; color: #a1a1a1;}
 .pageLinkBox ol li.active a,.pageLinkBox a:hover{color: black;}
+
+.selectBox::after{content: ''; display: block; clear: both;}
+.selectBox > *{float: left;}
+.selectBox > *:not(:last-child){margin-right: 1.66675%;}
+.selectBox select{width: 21.6666%;}
+.selectBox > div{width: 53.3333%; position: relative;}
+.selectBox > div input[type="search"]{width: 100%;}
+.selectBox > div button{position: absolute; right: 0; top: calc(50% - 12.5px); font-size: 25px;}
+.selectBox select , .selectBox > div input[type="search"]{
+    height: 60px; font-size: 20px; font-weight: 500; padding: 0 5px;
+    border-width: 0 0 3px 0; border-style: solid; border-color: black;
+}
+.selectBox > div input[type="search"]::placeholder{color: rgba(0, 0, 0, 0.5); }
+
+
 
 /* 메인 슬라이더 */
 .mainSliderArea{position: relative;}
@@ -116,11 +137,6 @@
 .main_franchiseArea div strong::after{content: ''; position: absolute; left: 0; bottom: 0px; width: 100%; height: 14px; background-color: #efb81b; border-radius: 100px;}
 .main_franchiseArea div strong mark{position: relative; z-index: 1;}
 .main_franchiseArea div p{font-size: 20px; line-height: 33px; max-width: 1000px; margin: 0 auto 60px;}
-
-
-.main_storeListArea ul li img{width: 100%;}
-.main_storeListArea ul li p{font-size: 20px; line-height: 31px; padding: 20px 35px;}
-
 
 
 /* sub page */
@@ -200,3 +216,6 @@
 
 .historyArea .modelArea{margin-bottom: 30px;}
 .historyArea .modelArea{padding: 125px 0 65px; background: url('../images/about_historyBG02.png') no-repeat center / cover; color: white; text-align: left;}
+
+
+.franchiseArea > div > p{font-size: 21px; padding: 50px 0;}
