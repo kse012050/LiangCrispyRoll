@@ -123,3 +123,8 @@
 .subPage .menuArea span{display: block; margin-top: 10px;}
 .subPage .menuArea p{margin-top: 20px;}
 
+
+/* sub page - menu - power pack*/
+.subPage .powerPackArea ul li{position: relative; padding-bottom: 29%; background-color: #f7f5f2; border-radius: 100%;}
+.subPage .powerPackArea ul li div{position: absolute; left: 0; top: 0; width: 100%; height: 100%; padding: 0 20%; box-sizing: border-box;
+     display: flex; flex-direction: column; justify-content: center; align-items: center;}
