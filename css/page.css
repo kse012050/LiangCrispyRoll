@@ -282,3 +282,15 @@
 .noticeArea .detailBox + ul li a p{color: rgba(0, 0, 0, 0.5); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 .noticeArea .listBtn{display: inline-block; width: 175px; line-height: 58px; font-size: 22px; border: 1px solid #a9a9a9;}
+
+
+/* sub page - privacy */
+.privacyArea{padding: 250px 0 180px;}
+.privacyArea > div{padding: 110px 100px; background-color: #f7f7f7;}
+.privacyArea > div h2{font-size: 44px; font-weight: 700; margin-bottom: 90px;}
+.privacyArea > div > ol > li{font-size: 24px; counter-increment: privacyCount;}
+.privacyArea > div > ol > li:not(:last-child){margin-bottom: 75px;}
+.privacyArea > div > ol > li strong{display: block; margin-bottom: 10px;}
+.privacyArea > div > ol > li strong::before{content: counter(privacyCount) ") ";}
+.privacyArea > div > ol > li p{line-height: 43px;}
+.privacyArea > div > ol > li p:not(:last-of-type){margin-bottom: 30px;}
