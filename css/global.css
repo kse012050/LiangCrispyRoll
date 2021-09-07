@@ -33,7 +33,7 @@
 
 
 /* sns */
-.snsArea{display: flex;}
+.snsArea{display: flex; align-items: center;}
 .snsArea a{text-indent: -9999px; width: 50px; height: 50px; background-position: center; background-size: cover;}
 .snsArea a:not(:last-child){margin-right: 30px;}
 .snsArea a.instagram{background-image: url('../images/instagram.png');}
@@ -44,15 +44,32 @@
 
 /* header */
 header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; }
-header > div{max-width: 1824px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
-header > div h1{max-width: 215px;}
-header > div h1 a{display: block;}
+header > div{max-width: 1824px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start;}
+header > div h1{max-width: 215px; }
+header > div > *:not(nav){height: 142px;}
+header > div h1 a{display: block; height: 100%; display: flex; align-items: center;}
 header > div h1 a img{width: 100%;}
-header > div nav ul::after{content: ''; display: block; clear: both;}
-header > div nav ul li{float: left;}
-header > div nav ul li a{font-size: 22px; font-weight: 700; display: block; line-height: 142px; padding: 0 30px;}
+header > div nav > ul::after{content: ''; display: block; clear: both;}
+header > div nav > ul > li{float: left;}
+header > div nav > ul > li > a{font-size: 22px; font-weight: 700; display: block; line-height: 142px; padding: 0 30px;}
+header > div nav > ul > li ul{display: none; padding: 10px 0;}
+header > div nav > ul > li ul li a{display: block; font-size: 20px; text-align: center; padding: 10px 0;}
 
-.mainPage header.active{z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
+header.active{z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
+
+
+header > div nav > ul > li:hover > a, header > div nav > ul > li.active > a{
+    color: #efb81b;
+}
+header > div nav > ul > li:hover > a span , header > div nav > ul > li.active > a span{
+    position: relative;
+}
+header > div nav > ul > li:hover > a span::after , header > div nav > ul > li.active > a span::after{
+    content: ''; position: absolute; left: 0; bottom: -5px; width: 100%; height: 1px; background-color: #efb81b;
+}
+header > div nav > ul > li ul li a:hover{color: #efb81b;}
+header > div nav > ul > li ul li.active a{color: #efb81b;}
+
 
 footer{background-color: #000000; padding: 100px 0;}
 footer div{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; color: white;}

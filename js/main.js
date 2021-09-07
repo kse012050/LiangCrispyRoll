@@ -7,6 +7,13 @@ $(document).ready(function(){
         }
     })
 
+    $('header nav').hover(function(){
+        // $('header').addClass('active');
+        $('header nav ul li ul').stop().slideDown();
+    },function(){
+        // $('header').removeClass('active');
+        $('header nav ul li ul').stop().slideUp();
+    })
 
     $('.mainSlider').bxSlider({
         touchEnabled:false,
