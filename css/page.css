@@ -55,16 +55,27 @@
 
 /* 게시판 */
 .noticeBox{text-align: left;}
-.noticeBox li{padding: 55px 40px 55px 40px; font-size: 20px; height: 350px; border: 1px solid #a9a9a9; box-sizing: border-box; display: flex; flex-direction: column;}
-.noticeBox li strong{display: block; font-weight: 700; margin-bottom: 30px;}
-.noticeBox li p{line-height: 33px;}
-.noticeBox li time{opacity: 0.5; margin-top: auto;}
+.noticeBox li{font-size: 20px; height: 350px; border: 1px solid #a9a9a9; box-sizing: border-box; }
+.noticeBox li a{height: 100%; padding: 55px 40px 55px 40px; box-sizing: border-box; display: flex; flex-direction: column;}
+.noticeBox li a strong{display: block; font-weight: 700; margin-bottom: 30px;}
+.noticeBox li a p{line-height: 33px;}
+.noticeBox li a time{opacity: 0.5; margin-top: auto;}
 
-/* 추천 매장 */
+/* 프렌차이즈  - 추천 매장 */
 .franchiseBox{text-align: left;}
 .franchiseBox li{border: 1px solid #a9a9a9; box-sizing: border-box;}
 .franchiseBox li img{width: 100%;}
 .franchiseBox li p{font-size: 20px; line-height: 31px; padding: 20px 35px;}
+
+/* 매장 확인 */
+.storeBox{display: flex; text-align: left;}
+.storeBox img{border: 1px solid #a9a9a9; margin-right: 8.6538%;}
+.storeBox figcaption{display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
+.storeBox figcaption b{font-size: 20px; margin-bottom: 40px;}
+.storeBox figcaption b::after{background-color: black;}
+.storeBox figcaption h3{font-size: 40px; margin-bottom: 50px;}
+.storeBox figcaption address{font-style: normal; font-size: 20px;}
+.storeBox figcaption address > *{display: block; margin-top: 25px;}
 
 /* 게시판 페이저 */
 .pageLinkBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
@@ -124,16 +135,6 @@
 .main_historyArea > div{position: relative;}
 .main_historyArea > div::after{content: ''; position: absolute; right: 0; top: 0; width: 46%; padding-top: 31%; background: url('../images/main_history.png') no-repeat center / cover;}
 
-
-.main_storeArea .slider figure{display: flex;}
-.main_storeArea .slider figure img{border: 1px solid #a9a9a9; margin-right: 8.6538%;}
-.main_storeArea .slider figure figcaption{display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
-.main_storeArea .slider figure figcaption b{font-size: 20px; margin-bottom: 40px;}
-.main_storeArea .slider figure figcaption b::after{background-color: black;}
-.main_storeArea .slider figure figcaption h3{font-size: 40px; margin-bottom: 50px;}
-.main_storeArea .slider figure figcaption address{font-style: normal; font-size: 20px;}
-.main_storeArea .slider figure figcaption address > *{display: block; margin-top: 25px;}
-
 .main_worldArea{background: url('../images/main_world.png') no-repeat center / cover; color: white;}
 
 .main_franchiseArea{text-align: center;}
@@ -192,7 +193,7 @@
 
 
 .worldArea .historyEventsArea{padding: 120px 0;}
-.worldArea .storeArea{padding-top: 120px;}
+.worldArea .worldStoreArea{padding-top: 120px;}
 
 .worldArea .historyEventsArea ul{padding-top: 645px; background:url('../images/about_worldBG02.png') no-repeat center / cover;}
 .worldArea .historyEventsArea ul li{display: none;}
@@ -200,8 +201,8 @@
 .worldArea .worldMapArea{padding-bottom: 61%; background: url('../images/about_worldBG03.png') no-repeat center / cover; position: relative;}
 .worldArea .worldMapArea h4{color: white; position: absolute; left: 0; top: 90px; width: 100%;}
 
-.worldArea .storeArea ul li{line-height: 0;}
-.worldArea .storeArea ul li img{width: 100%;}
+.worldArea .worldStoreArea ul li{line-height: 0;}
+.worldArea .worldStoreArea ul li img{width: 100%;}
 
 
 /* sub page - about - history */
@@ -224,7 +225,7 @@
 .historyArea .modelArea{padding: 125px 0 65px; background: url('../images/about_historyBG02.png') no-repeat center / cover; color: white; text-align: left;}
 
 
-/* 프렌차이즈  */
+/* sub page - franchise */
 .franchiseArea > div > p{font-size: 21px; line-height: 31px; padding: 45px 0;}
 
 .franchiseArea .joinUsArea{border-top: 3px solid black;}
@@ -253,3 +254,31 @@
 .questionBox fieldset input[type="checkbox"] + label{font-size: 22px; color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; margin-bottom: 25px;}
 .questionBox fieldset input[type="checkbox"] + label::before{content: ''; width: 22px; height: 22px; border:1px solid #cccccc; margin-right: 10px;}
 .questionBox fieldset input[type="submit"]{width: 260px; height: 75px; font-size: 24px; font-weight: 700; background-color: #efb81b; border: none;}
+
+
+/* sub page - store */
+.storeArea .selectBox{margin-bottom: 60px;}
+.storeArea ul li{padding-bottom: 50px; border-bottom: 1px solid #c9c9c9;}
+.storeArea ul li:not(:last-child){margin-bottom: 50px;}
+
+
+/* sub page - notice */
+.noticeArea .detailBox{text-align: left; padding: 60px 0 45px; border-top: 3px solid black;}
+.noticeArea .detailBox h3{font-size: 42px; font-weight: 500; margin-bottom: 25px;}
+.noticeArea .detailBox time{display: block; font-size: 25px; font-weight: 700; color: rgba(0, 0, 0, 0.5); margin-bottom: 35px;}
+.noticeArea .detailBox img{width: 100%; margin-bottom: 40px;}
+.noticeArea .detailBox p{font-size: 22px; line-height: 32px; margin-bottom: 60px;}
+.noticeArea .detailBox a.attach{display: flex; align-items: flex-end; font-size: 22; font-weight: 500;}
+.noticeArea .detailBox a.attach::before{content: ''; width: 24px; height: 24px; background: url('../images/notice_detailIcon.png') no-repeat center / cover; margin-right: 10px;}
+.noticeArea .detailBox a span{position: relative;}
+.noticeArea .detailBox a span::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 2px; background-color: black;}
+.noticeArea .detailBox a:not(:last-of-type){margin-bottom: 15px;}
+
+.noticeArea .detailBox + ul{text-align: left; border-top: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 65px;}
+.noticeArea .detailBox + ul li{font-size: 22px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+.noticeArea .detailBox + ul li a{display: flex; align-items: center; height: 68px;  padding: 0 30px;}
+.noticeArea .detailBox + ul li a span[class |= 'material']{transform: rotate(90deg); margin-right: 15px;}
+.noticeArea .detailBox + ul li a b{margin-right: 85px;}
+.noticeArea .detailBox + ul li a p{color: rgba(0, 0, 0, 0.5); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.noticeArea .listBtn{display: inline-block; width: 175px; line-height: 58px; font-size: 22px; border: 1px solid #a9a9a9;}
