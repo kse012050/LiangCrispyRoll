@@ -1,10 +1,10 @@
 @media screen and (min-width:1280px) {
     /* header에서만 사용시 삭제 */
-    .width1824{max-width: 1824px; margin: 0 auto;}
-    .width1560{max-width: 1560px; margin: 0 auto;}
+    .width1824{max-width: 1824px; width: calc(100% - 60px); margin: 0 auto;}
+    .width1560{max-width: 1560px; width: calc(100% - 60px); margin: 0 auto;}
     /* sub */
-    .width1300{max-width: 1300px; margin: 0 auto;}
-    .width1200{max-width: 1200px; margin: 0 auto;}
+    .width1300{max-width: 1300px; width: calc(100% - 60px); margin: 0 auto;}
+    .width1200{max-width: 1200px; width: calc(100% - 60px); margin: 0 auto;}
 
     .textHidden{height: 0.001px; overflow: hidden; visibility: hidden;}
 
