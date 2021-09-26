@@ -52,6 +52,7 @@ function menu(responsiveBoolean){
         });
     }else{
         $('.menuBtn').click(function(){
+            $(this).toggleClass('active');
             $('nav').stop().fadeToggle();
         })    
     }
