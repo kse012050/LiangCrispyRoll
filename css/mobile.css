@@ -132,8 +132,8 @@
 
     .layout3_2::after{content: ''; display: block; clear: both;}
     .layout3_2 li{float: left; width: 48%; box-sizing: border-box;}
-    .layout3_2 li:not(:nth-child(2n)){margin-right: 2%;}
-    .layout3_2 li:not(:nth-child(-n + 2)){margin-top: 2%;}
+    .layout3_2 li:not(:nth-child(2n)){margin-right: 4%;}
+    .layout3_2 li:not(:nth-child(-n + 2)){margin-top: 4%;}
 
 
     .layout2::after{content: ''; display: block; clear: both;}
@@ -174,7 +174,7 @@
     .franchiseBox{text-align: left;}
     .franchiseBox li{border: 1px solid #a9a9a9; box-sizing: border-box;}
     .franchiseBox li img{width: 100%;}
-    .franchiseBox li p{font-size: 20px; line-height: 31px; padding: 20px 35px;}
+    .franchiseBox li p{font-size: 20px; line-height: 31px; padding: 20px 30px;}
 
     /* 매장 확인 */
     .storeBox{text-align: left;}
@@ -351,6 +351,7 @@
     .franchiseArea .joinUsArea ul.joinUsBox li{position: relative; height: 200px; background-color: #efb81b;}
     .franchiseArea .joinUsArea ul.joinUsBox li strong{font-size: 30px; font-weight: 700; line-height: 38px;}
     .franchiseArea .joinUsArea ul.joinUsBox li img{position: absolute; bottom: 20px; right: 30px; max-width: 48px;}
+    .franchiseArea .pageLinkBox{display: none;}
 
     .questionBox{height: 100%; padding: 100px 0; box-sizing: border-box; overflow: auto;}
     .questionBox fieldset legend{font-size: 50px; font-weight: 700; margin-bottom: 50px;}
