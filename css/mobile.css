@@ -22,15 +22,15 @@
 
     /* btn */
     .btn{display: inline-block; font-size: 22px; font-weight: 700; color: white; padding: 0 40px; line-height: 65px; background-color: black; border-radius: 100px;}
-    .btn_1{display: inline-block; font-size: 24px; font-weight: 700; color: white; padding: 0 57px; line-height: 74px; background-color: black; border-radius: 100px;}
+    .btn_1{display: inline-block; font-size: 22px; font-weight: 700; color: white; padding: 0 40px; line-height: 65px; background-color: black; border-radius: 100px;}
 
     /* popup */
     [data-popupName="question"]{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 101;}
-    [data-popupName="question"] > div{width: 100%; max-width: 768px; height: 80%; max-height: 1080px; background-color: white; 
+    [data-popupName="question"] > div{width: calc(100% - 60px); max-width: 640px; height: 80%; max-height: 1080px; background-color: white; 
         position: absolute; left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%); 
     }
-    [data-popupName="question"] > div > button{position: absolute; right: 0; top: 0;  color: white; transform:translateX(calc(100% + 18px)); line-height: 1;}
-    [data-popupName="question"] > div > button span{font-size: 39px;}
+    [data-popupName="question"] > div > button{position: absolute; right: 35px; top: 35px;  color: black; line-height: 1;}
+    [data-popupName="question"] > div > button span{font-size: 50px;}
 
 
     /* sns */
@@ -120,9 +120,9 @@
 
     .layout4_1{text-align: left;}
     .layout4_1::after{content: ''; display: block; clear: both;}
-    .layout4_1 li{float: left; width: calc((100% - (2.5% * 3)) / 4); padding: 30px; box-sizing: border-box;}
-    .layout4_1 li:not(:nth-child(4n)){margin-right: 2.5%;}
-    .layout4_1 li:not(:nth-child(-n + 4)){margin-top: 2.5%;}
+    .layout4_1 li{float: left; width: 48%; padding: 30px; box-sizing: border-box;}
+    .layout4_1 li:not(:nth-child(2n)){margin-right: 4%;}
+    .layout4_1 li:not(:nth-child(-n + 2)){margin-top: 4%;}
 
     .layout3_1{display: flex; flex-wrap: wrap;}
     .layout3_1 li{width: 48%; box-sizing: border-box;}
@@ -344,34 +344,34 @@
 
 
     /* sub page - franchise */
-    .franchiseArea > div > p{font-size: 21px; line-height: 31px; padding: 45px 0;}
+    .franchiseArea > div > p{font-size: 21px; line-height: 31px; padding: 50px 0;}
 
     .franchiseArea .joinUsArea{border-top: 3px solid black;}
-    .franchiseArea .joinUsArea ul{margin-bottom: 60px;}
+    .franchiseArea .joinUsArea ul{margin-bottom: 50px;}
     .franchiseArea .joinUsArea ul.joinUsBox li{position: relative; height: 200px; background-color: #efb81b;}
     .franchiseArea .joinUsArea ul.joinUsBox li strong{font-size: 30px; font-weight: 700; line-height: 38px;}
     .franchiseArea .joinUsArea ul.joinUsBox li img{position: absolute; bottom: 20px; right: 30px; max-width: 48px;}
 
-    .questionBox{height: 100%; padding: 120px 0; box-sizing: border-box; overflow: auto;}
-    .questionBox fieldset legend{font-size: 58px; font-weight: 700; margin-bottom: 70px;}
-    .questionBox fieldset ul{max-width: 570px; margin: 0 auto; text-align: left; margin-bottom: 50px;}
+    .questionBox{height: 100%; padding: 100px 0; box-sizing: border-box; overflow: auto;}
+    .questionBox fieldset legend{font-size: 50px; font-weight: 700; margin-bottom: 50px;}
+    .questionBox fieldset ul{max-width: 480px; margin: 0 auto; text-align: left; margin-bottom: 50px;}
     .questionBox fieldset ul li{display: flex; justify-content: space-between; align-items: center;}
     .questionBox fieldset ul li.required label::after{content: '*'; display: inline-block; color: #eb0606; vertical-align: bottom;}
-    .questionBox fieldset ul li:not(:last-child){margin-bottom: 60px;}
-    .questionBox fieldset ul li > label{ width: 105px; font-size: 26px; font-weight: 500;}
+    .questionBox fieldset ul li:not(:last-child){margin-bottom: 20px;}
+    .questionBox fieldset ul li > label{ width: 105px; font-size: 22px; font-weight: 500;}
     .questionBox fieldset ul li > label + *{ width: calc((100% - 100px) * 0.93); }
-    .questionBox fieldset ul li > label + *:not(div){font-size: 26px; font-weight: 400; padding: 10px 10px; box-sizing: border-box; border-width: 0 0 1px 0; border-style: solid; }
+    .questionBox fieldset ul li > label + *:not(div){font-size: 22px; font-weight: 400; padding: 10px 10px; box-sizing: border-box; border-width: 0 0 1px 0; border-style: solid; }
     .questionBox fieldset ul li > label + select{border-color: black;}
     .questionBox fieldset ul li > label + input{border-color: #cccccc;}
     .questionBox fieldset ul li > div{display: flex; justify-content: space-between;}
     .questionBox fieldset ul li > div > *{line-height: 46px;}
     .questionBox fieldset ul li > div input[type="file"]{display: none;}
     .questionBox fieldset ul li > div input[type="text"]{width: 77%; font-size: 20px; padding: 0 15px; box-sizing: border-box;}
-    .questionBox fieldset ul li > div label{width: 21%; font-size: 20px; font-weight: 500; color: white; background-color: #333333; display: flex; justify-content: center; align-items: center;}
+    .questionBox fieldset ul li > div label{width: 21%; font-size: 15px; font-weight: 500; color: white; background-color: #333333; display: flex; justify-content: center; align-items: center;}
     .questionBox fieldset input[type="checkbox"]{display: none;}
-    .questionBox fieldset input[type="checkbox"] + label{font-size: 22px; color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; margin-bottom: 25px;}
+    .questionBox fieldset input[type="checkbox"] + label{font-size: 20px; color: rgba(0, 0, 0, 0.8); display: flex; justify-content: center; align-items: center; margin-bottom: 25px;}
     .questionBox fieldset input[type="checkbox"] + label::before{content: ''; width: 22px; height: 22px; border:1px solid #cccccc; margin-right: 10px;}
-    .questionBox fieldset input[type="submit"]{width: 260px; height: 75px; font-size: 24px; font-weight: 700; background-color: #efb81b; border: none;}
+    .questionBox fieldset input[type="submit"]{width: 200px; height: 55px; font-size: 22px; font-weight: 700; background-color: #efb81b; border: none;}
 
 
     /* sub page - store */
