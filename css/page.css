@@ -51,10 +51,12 @@
     .layout2 li img{width: 100%;}
 
     /* 메뉴 */
-    .menuBox img{width: 100%;}
-    .menuBox strong{display: block; font-size: 24px; font-weight: 700; }
-    .menuBox p{font-size: 20px; line-height: 28px; letter-spacing: -1.5px;}
-    .menuBox span{font-size: 20px; color: rgba(0, 0, 0, 0.7); letter-spacing: -1.5px;}
+    .menuBox li{position: relative;}
+    .menuBox li img{width: 100%;}
+    .menuBox li strong{display: block; font-size: 24px; font-weight: 700; }
+    .menuBox li p{font-size: 20px; line-height: 28px; letter-spacing: -1.5px;}
+    .menuBox li span{font-size: 20px; color: rgba(0, 0, 0, 0.7); letter-spacing: -1.5px;}
+    .menuBox li mark{position: absolute; left: 0; top: 0; width: 85px; font-size: 22px; line-height: 85px; font-weight: 700; color: white; background-color: #ff2130; border-radius: 100%;}
 
     /* 게시판 */
     .noticeBox{text-align: left;}

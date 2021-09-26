@@ -4,7 +4,7 @@
     .width1560{max-width: 640px; width: calc(100% - 60px); margin: 0 auto;}
     /* sub */
     .width1300{max-width: 1300px; width: calc(100% - 60px); margin: 0 auto;}
-    .width1200{max-width: 1200px; width: calc(100% - 60px); margin: 0 auto;}
+    .width1200{max-width: 640px; width: calc(100% - 60px); margin: 0 auto;}
 
     .textHidden{height: 0.001px; overflow: hidden; visibility: hidden;}
 
@@ -125,9 +125,9 @@
     .layout4_1 li:not(:nth-child(-n + 4)){margin-top: 2.5%;}
 
     .layout3_1{display: flex; flex-wrap: wrap;}
-    .layout3_1 li{width: 29%; box-sizing: border-box;}
-    .layout3_1 li:not(:nth-child(3n)){margin-right: 6.5%;}
-    .layout3_1 li:not(:nth-child(-n + 3)){margin-top: 5%;}
+    .layout3_1 li{width: 48%; box-sizing: border-box;}
+    .layout3_1 li:not(:nth-child(2n)){margin-right: 4%;}
+    .layout3_1 li:not(:nth-child(-n + 2)){margin-top: 4%;}
 
 
     .layout3_2::after{content: ''; display: block; clear: both;}
@@ -142,10 +142,12 @@
     .layout2 li img{width: 100%;}
 
     /* 메뉴 */
-    .menuBox img{width: 100%;}
-    .menuBox strong{display: block; font-size: 30px; font-weight: 700; }
-    .menuBox p{font-size: 26px; line-height: 40px; letter-spacing: -1.5px;}
-    .menuBox span{font-size: 20px; color: rgba(0, 0, 0, 0.7); letter-spacing: -1.5px;}
+    .menuBox li{position: relative;}
+    .menuBox li img{width: 100%;}
+    .menuBox li strong{display: block; font-size: 30px; font-weight: 700; }
+    .menuBox li p{font-size: 26px; line-height: 40px; letter-spacing: -1.5px;}
+    .menuBox li span{font-size: 24px; color: rgba(0, 0, 0, 0.7); letter-spacing: -1.5px;}
+    .menuBox li mark{position: absolute; left: 0; top: 0; width: 75px; font-size: 20px; line-height: 75px; font-weight: 700; color: white; background-color: #ff2130; border-radius: 100%;}
 
     /* 게시판 */
     .noticeBox{text-align: left;}
@@ -252,14 +254,14 @@
 
 
     /* sub page */
-    .subPage > section{padding: 250px 0 180px; text-align: center;}
-    .subPage > section h2{font-size: 62px; font-weight: 700; margin-bottom: 35px;}
-    .subPage > section h2 + p{font-size: 22px; font-weight: 500; margin-bottom: 100px;}
+    .subPage > section{padding: 200px 0 100px; text-align: center;}
+    .subPage > section h2{font-size: 54px; font-weight: 700; margin-bottom: 30px;}
+    .subPage > section h2 + p{font-size: 26px; font-weight: 500; margin-bottom: 80px;}
 
 
     /* sub page - menu*/
-    .subPage .menuArea .subMenu{display: flex; justify-content: center; padding-bottom: 35px; border-bottom: 3px solid black; margin-bottom: 90px;}
-    .subPage .menuArea .subMenu li{padding: 0 5px; margin: 0 45px; }
+    .subPage .menuArea .subMenu{display: flex; justify-content: center; padding-bottom: 25px; border-bottom: 3px solid black; margin-bottom: 60px;}
+    .subPage .menuArea .subMenu li{padding: 0 5px; margin: 0 30px; }
     .subPage .menuArea .subMenu li a{display: block; font-size: 26px; font-weight: 700;}
     .subPage .menuArea .subMenu li.active{position: relative;}
     .subPage .menuArea .subMenu li.active::after{content: ''; position: absolute; left: 0; bottom: -3px; width: 100%; height: 14px; background-color: #efb81b; border-radius: 100px;}
@@ -267,11 +269,11 @@
 
     .subPage .menuBox img{margin-bottom: 25px;}
     .subPage .menuBox span{display: block; margin-top: 10px;}
-    .subPage .menuBox p{margin-top: 20px;}
+    .subPage .menuBox p{margin-top: 25px;}
 
     /* sub page - menu - power pack*/
-    .subPage .powerPackArea ul li{position: relative; padding-bottom: 29%; background-color: #f7f5f2; border-radius: 100%;}
-    .subPage .powerPackArea ul li div{position: absolute; left: 0; top: 0; width: 100%; height: 100%; padding: 0 20%; box-sizing: border-box;
+    .subPage .powerPackArea ul li{position: relative; padding-bottom: 48%; background-color: #f7f5f2; border-radius: 100%;}
+    .subPage .powerPackArea ul li div{position: absolute; left: 0; top: 0; width: 100%; height: 100%; padding: 0 5%; box-sizing: border-box;
         display: flex; flex-direction: column; justify-content: center; align-items: center;
     }
 
