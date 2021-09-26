@@ -222,19 +222,20 @@
 
     /* 메인 슬라이더 */
     .mainSliderArea{position: relative;}
-    .mainSliderArea .mainSlider > div{background-repeat: no-repeat; background-position: center; background-size: 100%;}
-    .mainSliderArea .mainSlider .mainSlider01{max-height: 56.875rem; height: 50vw; display: flex; justify-content: center; align-items: flex-end; background-image: url('../images/main_SliderBG.png');}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox{background-color: rgba(0, 0, 0, 0.8); border-radius: 6.250rem; color: white; display: flex; align-items: e; padding: 2.625rem 6.250rem; margin-right: 8.125rem; position: relative;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 2.688rem; font-weight: 700;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div{position: absolute; top: calc(50% - 1.563rem);}
+    .mainSliderArea .mainSlider > div{background-repeat: no-repeat; background-position: top; background-size: 100%;}
+    .mainSliderArea .mainSlider .mainSlider01{/* max-height: 56.875rem; height: 50vw;  */ padding-top: 47vw; display: flex; justify-content: center; align-items: flex-end; background-image: url('../images/main_SliderBG.png');}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox{ width: 100%; max-width: 640px; position: relative; }
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div{background-color: rgba(0, 0, 0, 0.8); border-radius: 6.250rem; color: white; height: 6.875rem; display: flex; justify-content: space-between; align-items: center; padding: 0 3.125rem; margin-bottom: 1.875rem;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 2.875rem; font-weight: 700;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div{}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderPrev{left: 1.563rem;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderNext{right: 1.563rem;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div a{font-size: 3.125rem;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox p{font-size: 1.063rem; line-height: 1.438rem; max-width: 24.063rem; margin: 0 3.438rem; opacity: 0.8; letter-spacing: -0.125rem;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div a{font-size: 2.125rem;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox p{font-size: 1.625rem; line-height: 2.500rem; text-align: center; letter-spacing: -0.125rem;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox a{color: white;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > a{font-size: 1.313rem; font-weight: 700;}
-    .mainSliderArea ul{position: absolute; left: 0; bottom: 0; width: 100%; pointer-events: none;}
-    .mainSliderArea ul li img{max-width: 44.813rem; width: 39vw;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > a{display: none; font-size: 1.313rem; font-weight: 700;}
+    .mainSliderArea ul{position: absolute; left: 0; top: 6vw; width: 100%; pointer-events: none;}
+    .mainSliderArea ul li img{max-width: 44.813rem; width: 30vw;}
 
     .main_menuArea ul{display: flex; justify-content: center; margin-bottom: 3.125rem;}
     .main_menuArea ul li{padding: 0 0.313rem; margin: 0 1.875rem; }

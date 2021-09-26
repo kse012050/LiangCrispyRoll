@@ -111,7 +111,7 @@
     /* 메인 슬라이더 */
     .mainSliderArea{position: relative;}
     .mainSliderArea .mainSlider > div{background-repeat: no-repeat; background-position: center; background-size: 100%;}
-    .mainSliderArea .mainSlider .mainSlider01{max-height: 910px; height: 50vw; display: flex; justify-content: flex-end; align-items: center; background-image: url('../images/main_SliderBG.png');}
+    .mainSliderArea .mainSlider .mainSlider01{max-height: 910px; height: 47vw; display: flex; justify-content: flex-end; align-items: center; background-image: url('../images/main_SliderBG.png');}
     .mainSliderArea .mainSlider .mainSlider01 .textBox{background-color: rgba(0, 0, 0, 0.8); border-radius: 100px; color: white; display: flex; align-items: center; padding: 42px 100px; margin-right: 130px; position: relative;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 43px; font-weight: 700;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div{position: absolute; top: calc(50% - 25px);}
@@ -121,8 +121,13 @@
     .mainSliderArea .mainSlider .mainSlider01 .textBox p{font-size: 17px; line-height: 23px; max-width: 385px; margin: 0 55px; opacity: 0.8; letter-spacing: -2px;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox a{color: white;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > a{font-size: 21px; font-weight: 700;}
+    @media screen and (min-width:1450px) {
+    }
+    @media screen and (max-width:1449px) {
+        .mainSliderArea .mainSlider .mainSlider01 .textBox{margin-right: 10px; }
+    }
     .mainSliderArea ul{position: absolute; left: 0; bottom: 0; width: 100%; pointer-events: none;}
-    .mainSliderArea ul li img{max-width: 717px; width: 39vw;}
+    .mainSliderArea ul li img{max-width: 717px; width: 35vw;}
 
     .main_menuArea ul{display: flex; justify-content: center; margin-bottom: 70px;}
     .main_menuArea ul li{padding: 0 5px; margin: 0 45px; }
