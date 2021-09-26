@@ -294,7 +294,7 @@
 
     /* sub page - privacy */
     .privacyArea{padding: 250px 0 180px;}
-    .privacyArea > div{padding: 110px 100px; background-color: #f7f7f7;}
+    .privacyArea > div{padding: 110px 100px; background-color: #f7f7f7; box-sizing: border-box;}
     .privacyArea > div h2{font-size: 44px; font-weight: 700; margin-bottom: 90px;}
     .privacyArea > div > ol > li{font-size: 24px; counter-increment: privacyCount;}
     .privacyArea > div > ol > li:not(:last-child){margin-bottom: 75px;}
