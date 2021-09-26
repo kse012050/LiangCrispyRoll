@@ -189,7 +189,7 @@
     .storeBox figcaption address > *:not(:first-child){margin-top: 15px;}
 
     /* 게시판 페이저 */
-    .pageLinkBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
+    .pageLinkBox{ display: flex; display: none; justify-content: center; align-items: center; margin-top: 60px;}
     .pageLinkBox a{display: flex; justify-content: center; align-items: center; width: 32px; height: 32px;}
     .pageLinkBox > a{border: 1px solid #e8e8e8; color: #a8a8a8 ;}
     .pageLinkBox > a:first-of-type{margin-right: 10px;}
@@ -351,7 +351,7 @@
     .franchiseArea .joinUsArea ul.joinUsBox li{position: relative; height: 200px; background-color: #efb81b;}
     .franchiseArea .joinUsArea ul.joinUsBox li strong{font-size: 30px; font-weight: 700; line-height: 38px;}
     .franchiseArea .joinUsArea ul.joinUsBox li img{position: absolute; bottom: 20px; right: 30px; max-width: 48px;}
-    .franchiseArea .pageLinkBox{display: none;}
+    /* .franchiseArea .pageLinkBox{display: none;} */
 
     .questionBox{height: 100%; padding: 100px 0; box-sizing: border-box; overflow: auto;}
     .questionBox fieldset legend{font-size: 50px; font-weight: 700; margin-bottom: 50px;}
@@ -383,24 +383,24 @@
 
     /* sub page - notice */
     .noticeArea .detailBox{text-align: left; padding: 60px 0 45px; border-top: 3px solid black;}
-    .noticeArea .detailBox h3{font-size: 42px; font-weight: 500; margin-bottom: 25px;}
-    .noticeArea .detailBox time{display: block; font-size: 25px; font-weight: 700; color: rgba(0, 0, 0, 0.5); margin-bottom: 35px;}
-    .noticeArea .detailBox img{width: 100%; margin-bottom: 40px;}
+    .noticeArea .detailBox h3{font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+    .noticeArea .detailBox time{display: block; font-size: 25px; font-weight: 700; color: rgba(0, 0, 0, 0.5); margin-bottom: 30px;}
+    .noticeArea .detailBox img{width: 100%; margin-bottom: 30px;}
     .noticeArea .detailBox p{font-size: 22px; line-height: 32px; margin-bottom: 60px;}
-    .noticeArea .detailBox a.attach{display: flex; align-items: flex-end; font-size: 22; font-weight: 500;}
+    .noticeArea .detailBox a.attach{display: flex; align-items: flex-end; font-size: 22px; font-weight: 500;}
     .noticeArea .detailBox a.attach::before{content: ''; width: 24px; height: 24px; background: url('../images/notice_detailIcon.png') no-repeat center / cover; margin-right: 10px;}
     .noticeArea .detailBox a span{position: relative;}
     .noticeArea .detailBox a span::after{content: ''; position: absolute; left: 0; bottom: -2px; width: 100%; height: 2px; background-color: black;}
     .noticeArea .detailBox a:not(:last-of-type){margin-bottom: 15px;}
 
-    .noticeArea .detailBox + ul{text-align: left; border-top: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 65px;}
+    .noticeArea .detailBox + ul{display: none; text-align: left; border-top: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 65px;}
     .noticeArea .detailBox + ul li{font-size: 22px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
     .noticeArea .detailBox + ul li a{display: flex; align-items: center; height: 68px;  padding: 0 30px;}
     .noticeArea .detailBox + ul li a span[class |= 'material']{transform: rotate(90deg); margin-right: 15px;}
     .noticeArea .detailBox + ul li a b{margin-right: 85px;}
     .noticeArea .detailBox + ul li a p{color: rgba(0, 0, 0, 0.5); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
-    .noticeArea .listBtn{display: inline-block; width: 175px; line-height: 58px; font-size: 22px; border: 1px solid #a9a9a9;}
+    .noticeArea .listBtn{display: inline-block; display: none; width: 175px; line-height: 58px; font-size: 22px; border: 1px solid #a9a9a9;}
 
 
     /* sub page - privacy */
