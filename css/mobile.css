@@ -3,7 +3,7 @@
     .width1824{max-width: 1824px; width: calc(100% - 60px); margin: 0 auto;}
     .width1560{max-width: 640px; width: calc(100% - 60px); margin: 0 auto;}
     /* sub */
-    .width1300{max-width: 1300px; width: calc(100% - 60px); margin: 0 auto;}
+    .width1300{max-width: 640px; width: calc(100% - 60px); margin: 0 auto;}
     .width1200{max-width: 640px; width: calc(100% - 60px); margin: 0 auto;}
 
     .textHidden{height: 0.001px; overflow: hidden; visibility: hidden;}
@@ -135,13 +135,18 @@
     .layout3_2 li:not(:nth-child(2n)){margin-right: 2%;}
     .layout3_2 li:not(:nth-child(-n + 2)){margin-top: 2%;}
 
+
     .layout2::after{content: ''; display: block; clear: both;}
-    /* .layout2 li{float: left; width: 48.75%;} */
-    .layout2 li{float: left; width: 100%;}
-    .layout2 li:not(:last-child){margin-bottom: 15px;}
-    /* .layout2 li:not(:nth-child(2n)){margin-right: 2.5%;} */
-    /* .layout2 li:not(:nth-child(-n + 2)){margin-top: 2.5%;} */
+    .layout2 li{float: left; width: 48.75%;}
+    .layout2 li:not(:nth-child(2n)){margin-right: 2.5%;}
+    .layout2 li:not(:nth-child(-n + 2)){margin-top: 2.5%;}
     .layout2 li img{width: 100%;}
+
+
+    .layout2_1::after{content: ''; display: block; clear: both;}
+    .layout2_1 li{float: left; width: 100%;}
+    .layout2_1 li:not(:last-child){margin-bottom: 15px;}
+    .layout2_1 li img{width: 100%;}
 
     /* 메뉴 */
     .menuBox li{position: relative;}
@@ -304,11 +309,14 @@
     .worldArea .historyEventsArea{padding: 120px 0;}
     .worldArea .worldStoreArea{padding-top: 120px;}
 
-    .worldArea .historyEventsArea ul{padding-top: 645px; background:url('../images/about_worldBG02.png') no-repeat center / cover;}
-    .worldArea .historyEventsArea ul li{display: none;}
+    .worldArea .historyEventsArea ul::before{content: ''; display: block; padding-top: 54.5%; background:url('../images/m/about_worldBG02.png') no-repeat center / cover; margin-bottom: 30px;}
+    .worldArea .historyEventsArea ul li{display: flex; padding: 15px 0; text-align: left; background-color: white; border-radius: 15px; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);}
+    .worldArea .historyEventsArea ul li:not(:last-child){margin-bottom: 15px;}
+    .worldArea .historyEventsArea ul li mark{width: 105px; font-size: 20px; font-weight: 600; color: #efb81b; flex-shrink: 0; padding-left: 20px; box-sizing: border-box;}
+    .worldArea .historyEventsArea ul li p{flex: 1; font-size: 22px; font-weight: 500; }
 
-    .worldArea .worldMapArea{padding-bottom: 61%; background: url('../images/about_worldBG03.png') no-repeat center / cover; position: relative;}
-    .worldArea .worldMapArea h4{color: white; position: absolute; left: 0; top: 90px; width: 100%;}
+    .worldArea .worldMapArea{background:#050c26 url('../images/m/about_worldBG03.png') no-repeat center / 640px; position: relative;}
+    .worldArea .worldMapArea h4{padding: 65px 0 410px; color: white; margin-bottom: auto;}
 
     .worldArea .worldStoreArea ul li{line-height: 0;}
     .worldArea .worldStoreArea ul li img{width: 100%;}

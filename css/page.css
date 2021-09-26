@@ -44,11 +44,11 @@
     .layout3_2 li:not(:nth-child(3n)){margin-right: 2.5%;}
     .layout3_2 li:not(:nth-child(-n + 3)){margin-top: 2.5%;}
 
-    .layout2::after{content: ''; display: block; clear: both;}
-    .layout2 li{float: left; width: 48.75%;}
-    .layout2 li:not(:nth-child(2n)){margin-right: 2.5%;}
-    .layout2 li:not(:nth-child(-n + 2)){margin-top: 2.5%;}
-    .layout2 li img{width: 100%;}
+    [class*="layout2"]::after{content: ''; display: block; clear: both;}
+    [class*="layout2"] li{float: left; width: 48.75%;}
+    [class*="layout2"] li:not(:nth-child(2n)){margin-right: 2.5%;}
+    [class*="layout2"] li:not(:nth-child(-n + 2)){margin-top: 2.5%;}
+    [class*="layout2"] li img{width: 100%;}
 
     /* 메뉴 */
     .menuBox li{position: relative;}
