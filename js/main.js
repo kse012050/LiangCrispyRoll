@@ -27,12 +27,13 @@ $(document).ready(function(){
             responsiveBoolean = false;
         }
 
+        menu(responsiveBoolean)
         mainSlider(responsiveBoolean);
     })
    
 });
 
-function menu(){
+function menu(responsiveBoolean){
     $(window).scroll(function(){
         if($(window).scrollTop() > 0){
             $('header').addClass('active')
@@ -41,13 +42,19 @@ function menu(){
         }
     })
 
-    $('header nav').hover(function(){
-        // $('header').addClass('active');
-        $('header nav ul li ul').stop().slideDown();
-    },function(){
-        // $('header').removeClass('active');
-        $('header nav ul li ul').stop().slideUp();
-    })
+    if(responsiveBoolean){
+        $('header nav').hover(function(){
+            // $('header').addClass('active');
+            $('header nav ul li ul').stop().slideDown();
+        },function(){
+            // $('header').removeClass('active');
+            $('header nav ul li ul').stop().slideUp();
+        });
+    }else{
+        $('.menuBtn').click(function(){
+            $('nav').stop().fadeToggle();
+        })    
+    }
 }
 
 function mainSlider(responsiveBoolean){
@@ -67,7 +74,7 @@ function mainSlider(responsiveBoolean){
             maxSlides : 4,
             minSlides : 4,
             moveSlides : 1,
-            slideWidth: 500,
+            slideWidth: 500,   
             slideMargin: 50,
             prevText: '<span class="material-icons-outlined">chevron_left</span>',
             nextText: '<span class="material-icons-outlined">navigate_next</span>',

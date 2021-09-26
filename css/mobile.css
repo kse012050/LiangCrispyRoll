@@ -34,7 +34,7 @@
 
 
     /* sns */
-    .snsArea{display: flex; align-items: center;}
+    .snsArea{display: flex; justify-content: center; align-items: center;}
     .snsArea a{text-indent: -9999px; width: 50px; height: 50px; background-position: center; background-size: cover;}
     .snsArea a:not(:last-child){margin-right: 30px;}
     .snsArea a.instagram{background-image: url('../images/instagram.png');}
@@ -44,7 +44,7 @@
 
 
     /* header */
-    header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; }
+    header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; z-index: 100;}
     header > div{height: 100px; display: flex; justify-content: space-between; align-items: center; }
     header > div h1{max-width: 145px; }
     header > div h1 a{display: block; height: 100%; display: flex; align-items: center;}
@@ -52,13 +52,13 @@
     header > div .menuBtn{width: 45px; height: 100%;}
     header > div .menuBtn span{display: block; height: 3px; background-color: black;}
     header > div .menuBtn span:not(:last-child){margin-bottom: 12px;}
-    header > div nav{display: none;}
-    header > div nav > ul::after{content: ''; display: block; clear: both;}
-    header > div nav > ul > li{float: left;}
-    header > div nav > ul > li > a{font-size: 22px; font-weight: 700; display: block; line-height: 142px; padding: 0 30px;}
-    header > div nav > ul > li ul{display: none; padding: 10px 0;}
-    header > div nav > ul > li ul li a{display: block; font-size: 20px; text-align: center; padding: 10px 0;}
-    header > div nav .snsArea{position: absolute; right: 0; top: 0; }
+    header > div nav{/* display: none; */ position: fixed; top: 98px; bottom: 0; left: 0; width: 100%; background-color: white; z-index: 99;}
+    header > div nav > ul{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: calc(100% - 200px);}
+    header > div nav > ul > li:not(:last-child){margin-bottom: 20px;}
+    header > div nav > ul > li > a{font-size: 50px; font-weight: 700; display: block;}
+    header > div nav > ul > li ul{ padding: 10px 0;}
+    header > div nav > ul > li ul li a{display: block; font-size: 30px; text-align: center; padding: 10px 0;}
+    header > div nav .snsArea{position: absolute; left: 0; bottom: 50px; width: 100%;}
 
     header.active{z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
     header:hover{z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
@@ -231,7 +231,7 @@
     .mainSliderArea ul li img{max-width: 717px; width: 39vw;}
 
     .main_menuArea ul{display: flex; justify-content: center; margin-bottom: 50px;}
-    .main_menuArea ul li{padding: 0 5px; margin: 0 45px; }
+    .main_menuArea ul li{padding: 0 5px; margin: 0 30px; }
     .main_menuArea ul li a{display: block; font-size: 26px; font-weight: 700;}
     .main_menuArea ul li.active{position: relative;}
     .main_menuArea ul li.active::after{content: ''; position: absolute; left: 0; bottom: -3px; width: 100%; height: 14px; background-color: #efb81b; border-radius: 100px;}
