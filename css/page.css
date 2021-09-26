@@ -74,7 +74,7 @@
 
     /* 매장 확인 */
     .storeBox{display: flex; text-align: left;}
-    .storeBox img{border: 1px solid #a9a9a9; margin-right: 8.6538%;}
+    .storeBox img{width: 720px; border: 1px solid #a9a9a9; margin-right: 8.6538%;}
     .storeBox figcaption{display: flex; flex-direction: column; justify-content: center; align-items: flex-start;}
     .storeBox figcaption b{font-size: 20px; margin-bottom: 40px;}
     .storeBox figcaption b::after{background-color: black;}

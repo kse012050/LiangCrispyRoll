@@ -178,7 +178,7 @@
 
     /* 매장 확인 */
     .storeBox{text-align: left;}
-    .storeBox img{border: 1px solid #a9a9a9; margin-bottom: 45px;}
+    .storeBox img{width: 100%; border: 1px solid #a9a9a9; margin-bottom: 45px;}
     .storeBox figcaption{position: relative;}
     .storeBox figcaption b{font-size: 22px; position: absolute; right: 0; top: 0;}
     .storeBox figcaption b::after{background-color: black;}
@@ -201,13 +201,13 @@
 
     .selectBox::after{content: ''; display: block; clear: both;}
     .selectBox > *{float: left;}
-    .selectBox > *:not(:last-child){margin-right: 1.66675%;}
-    .selectBox select{width: 21.6666%;}
-    .selectBox > div{width: 53.3333%; position: relative;}
+    .selectBox > select:not(:last-of-type){margin-right: 4%; margin-bottom: 10px;}
+    .selectBox select{width: 48%;}
+    .selectBox > div{width: 100%; position: relative; }
     .selectBox > div input[type="search"]{width: 100%;}
-    .selectBox > div button{position: absolute; right: 0; top: calc(50% - 12.5px); font-size: 25px;}
+    .selectBox > div button{position: absolute; right: 0; top: calc(50% - 17.5px); font-size: 35px;}
     .selectBox select , .selectBox > div input[type="search"]{
-        height: 60px; font-size: 20px; font-weight: 500; padding: 0 5px;
+        height: 60px; font-size: 24px; font-weight: 500; padding: 0 5px;
         border-width: 0 0 3px 0; border-style: solid; border-color: black;
     }
     .selectBox > div input[type="search"]::placeholder{color: rgba(0, 0, 0, 0.5); }
