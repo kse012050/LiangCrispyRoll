@@ -52,26 +52,24 @@ function menu(){
         }
     })
 
-    if(responsiveBoolean){
-        $('header nav').hover(function(){
-            if($(window).width() >= responsiveWidht){
-                // $('header').addClass('active');
-                $('header nav ul li ul').stop().slideDown();
-            }
-        },function(){
-            if($(window).width() >= responsiveWidht){
-                // $('header').removeClass('active');
-                $('header nav ul li ul').stop().slideUp();
-            }
-        });
-    }else{
-        $('.menuBtn').click(function(){
-            if($(window).width() < responsiveWidht){
-                $(this).toggleClass('active');
-                $('nav').stop().fadeToggle();
-            }
-        })    
-    }
+    $('header nav').hover(function(){
+        if($(window).width() >= responsiveWidht){
+            // $('header').addClass('active');
+            $('header nav ul li ul').stop().slideDown();
+        }
+    },function(){
+        if($(window).width() >= responsiveWidht){
+            // $('header').removeClass('active');
+            $('header nav ul li ul').stop().slideUp();
+        }
+    });
+   
+    $('.menuBtn').click(function(){
+        if($(window).width() < responsiveWidht){
+            $(this).toggleClass('active');
+            $('nav').stop().fadeToggle();
+        }
+    })    
 }
 
 function mainSlider(responsiveBoolean){
