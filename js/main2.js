@@ -1,9 +1,12 @@
+var responsiveBoolean = true;
+var responsiveWidht = 1280;
 var mainMenuSlider;
 var mainMenuSliderAPI;
 
 var test;
 
 $(document).ready(function(){
+    menu();
 
     $('[data-popupClick="question"]').click(function(e){
         var popupName = $(this).attr('data-popupClick');
@@ -18,9 +21,14 @@ $(document).ready(function(){
         })
     });
 
+    if($(window).width() >= 1280){
+        responsiveBoolean = true;
+    }else{
+        responsiveBoolean = false;
+    }
+
     mainMenuSliderInit();
     mainSlider();
-    mainSliderClick();
 
     $(window).resize(function(){
         if($(window).width() >= responsiveWidht){
@@ -30,10 +38,43 @@ $(document).ready(function(){
         }
 
         mainMenuSliderInit()
-        mainSliderResponsive();
+        mainSliderResponsive(responsiveBoolean);
+
+        menu(responsiveBoolean);
     })
+   
 });
 
+function menu(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 0){
+            if($(window).width() >= responsiveWidht){
+                $('header').addClass('active')
+            }
+        }else{
+            if($(window).width() >= responsiveWidht){
+                $('header').removeClass('active')
+            }
+        }
+    })
+
+    $('header nav').hover(function(){
+        if($(window).width() >= responsiveWidht){
+            $('header nav ul li ul').stop().slideDown();
+        }
+    },function(){
+        if($(window).width() >= responsiveWidht){
+            $('header nav ul li ul').stop().slideUp();
+        }
+    });
+   
+    $('.menuBtn').click(function(){
+        if($(window).width() < responsiveWidht){
+            $(this).toggleClass('active');
+            $('nav').stop().fadeToggle();
+        }
+    })    
+}
 
 function mainSlider(){
     $('.mainSlider').bxSlider({
@@ -77,9 +118,10 @@ function mainMenuSliderInit(){
     }
 }
 
-function mainSliderResponsive(){
+function mainSliderResponsive(responsiveBoolean){
     if(test != mainMenuSliderAPI){
         mainMenuSlider.reloadSlider(mainMenuSliderAPI);
+        
         test = mainMenuSliderAPI;
     }
     
