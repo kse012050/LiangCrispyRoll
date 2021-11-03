@@ -4,20 +4,6 @@ var mainMenuSliderAPI;
 var mainMenuSliderAPISave;
 
 $(document).ready(function(){
-
-    $('[data-popupClick="question"]').click(function(e){
-        var popupName = $(this).attr('data-popupClick');
-        $('[data-popupName="'+popupName+'"]').stop().fadeIn();
-        $('body').css('overflow','hidden');
-        $('[data-popupName="'+popupName+'"] , [data-popupName="'+popupName+'"] .popupClose ').on('click',function(){
-            $('[data-popupName="'+popupName+'"]').stop().fadeOut();
-            $('body').removeAttr('style');
-        })
-        $('[data-popupName="'+popupName+'"] > *').on('click',function(e){
-            e.stopPropagation();
-        })
-    });
-
     mainMenuSliderInit();
     mainSlider();
     mainSliderClick();
