@@ -1,7 +1,7 @@
 var mainMenuSlider;
 var mainMenuSliderAPI;
 
-var test;
+var mainMenuSliderAPISave;
 
 $(document).ready(function(){
 
@@ -78,9 +78,9 @@ function mainMenuSliderInit(){
 }
 
 function mainSliderResponsive(){
-    if(test != mainMenuSliderAPI){
+    if(mainMenuSliderAPISave != mainMenuSliderAPI){
         mainMenuSlider.reloadSlider(mainMenuSliderAPI);
-        test = mainMenuSliderAPI;
+        mainMenuSliderAPISave = mainMenuSliderAPI;
     }
     
 }
