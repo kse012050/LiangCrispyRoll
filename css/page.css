@@ -80,7 +80,7 @@
     .storeBox figcaption b::after{background-color: black;}
     .storeBox figcaption h3{font-size: 40px; margin-bottom: 50px;}
     .storeBox figcaption address{font-style: normal; font-size: 20px;}
-    .storeBox figcaption address > *{display: block; margin-top: 25px;}
+    .storeBox figcaption address > *{display: block; margin-top: 25px; line-height: 26px;}
 
     /* 게시판 페이저 */
     .pageLinkBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
@@ -95,7 +95,7 @@
 
     .selectBox::after{content: ''; display: block; clear: both;}
     .selectBox > *{float: left;}
-    .selectBox > *:not(:last-child){margin-right: 1.66675%;}
+    .selectBox > *:not(:last-child){margin-right: 1.66675%;background-color: #fff9e9;}
     .selectBox select{width: 21.6666%;}
     .selectBox > div{width: 53.3333%; position: relative;}
     .selectBox > div input[type="search"]{width: 100%;}
@@ -127,7 +127,7 @@
         .mainSliderArea .mainSlider .mainSlider01 .textBox{margin-right: 10px; }
     }
     .mainSliderArea ul{position: absolute; left: 0; bottom: 0; width: 100%; pointer-events: none;}
-    .mainSliderArea ul li img{max-width: 717px; width: 35vw;}
+    .mainSliderArea ul li img{max-width: 717px; width: 32vw;}
 
     .main_menuArea ul{display: flex; justify-content: center; margin-bottom: 70px;}
     .main_menuArea ul li{padding: 0 5px; margin: 0 45px; }
@@ -141,7 +141,7 @@
     .main_menuArea .menuSliderArea .menuSlider .slider > div{text-align: center;}
     .main_menuArea .menuSliderArea .menuSlider .slider > div img{margin-bottom: 25px; width: 100%;}
     .main_menuArea .menuSliderArea .menuSlider .slider > div strong{margin-bottom: 20px; /* display: block; font-size: 24px; font-weight: 700;  */}
-    .main_menuArea .menuSliderArea .menuSlider .slider > div p{ max-width: 240px; margin: 0 auto; /* font-size: 20px; line-height: 28px; letter-spacing: -1.5px; */}
+    .main_menuArea .menuSliderArea .menuSlider .slider > div p{ max-width: 240px; margin: 0 auto; line-height: 20px;/* font-size: 20px; line-height: 28px; letter-spacing: -1.5px; */}
 
 
     .main_historyArea{background-color: #f2f0e6;}

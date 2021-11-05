@@ -24,7 +24,7 @@
     .underline::after{content: ''; position: absolute; left: 0; bottom: -0.625rem; width: 100%; height: 0.063rem; background-color: white;}
 
     /* btn */
-    .btn{display: inline-block; font-size: 1.375rem; font-weight: 700; color: white; padding: 0 2.500rem; line-height: 4.063rem; background-color: black; border-radius: 6.250rem;}
+    .btn{display: inline-block; font-size: 1.375rem; font-weight: 700; color: white; padding: 0 3.500rem; line-height: 4.763rem; background-color: black; border-radius: 6.250rem;}
     .btn_1{display: inline-block; font-size: 1.375rem; font-weight: 700; color: white; padding: 0 2.500rem; line-height: 4.063rem; background-color: black; border-radius: 6.250rem;}
 
     /* popup */
@@ -60,7 +60,7 @@
     header > div .menuBtn.active span:nth-child(3){transform: translateY(-0.938rem) rotate(-45deg);}
     header > div nav{display: none; position: fixed; top: 6.125rem; bottom: 0; left: 0; width: 100%; background-color: white; z-index: 99;}
     header > div nav > ul{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: calc(100% - 12.500rem);}
-    header > div nav > ul > li:not(:last-child){margin-bottom: 1.250rem;}
+    header > div nav > ul > li:not(:last-child){margin-bottom: 2.250rem;}
     header > div nav > ul > li > a{font-size: 3.125rem; font-weight: 700; display: block;}
     header > div nav > ul > li ul{ padding: 0.625rem 0;}
     header > div nav > ul > li ul li a{display: block; font-size: 1.875rem; text-align: center; padding: 0.625rem 0;}
@@ -99,13 +99,13 @@
     /* 메인 페이지 공통 */
     .main_line{position: relative; }
     .main_line::after{content: ''; display: none; left: 0; top: 50%; position: absolute; width: 100%; height: 0.063rem; background-color: rgba(0, 0, 0, 0.4);}
-    .main_line span{display: inline-block; background: white; padding: 0 4.375rem; position: relative; z-index: 1;}
+    .main_line span{display: inline-block; background: white; padding: 0 2.375rem; position: relative; z-index: 1;}
     [class^="main"][class^="main_"][class*="Area"]:not(.main_imgArea){padding: 6.250rem 0;}
     [class^="main"][class*="Area"] > h2{text-align: center;}
     [class^="main"][class*="Area"] > h2 + .main_line{text-align: center;}
     [class^="main"][class*="Area"] h2{font-size: 3.375rem; font-weight: 700;}
     [class^="main"][class*="Area"] h2:not([class="main_line"]){margin-bottom: 1.875rem;}
-    [class^="main"][class*="Area"] h2 + .main_line{font-size: 1.625rem;}
+    [class^="main"][class*="Area"] h2 + .main_line{font-size: 1.625rem; line-height: 2.500rem; text-align: center; letter-spacing: -0.125rem;}
     [class^="main"][class*="Area"] .main_line{margin-bottom: 4.375rem;}
 
     [class^="main"][class*="Area"] .bx-controls{position: absolute; top: 50%; left: 50%; width: calc(100vw - 2.063rem); transform: translateX(-50%);}
@@ -116,7 +116,7 @@
     /* .main_imgArea{padding: 4.688rem 0;} */
     .main_imgArea > div{padding: 30.313rem 0 6.250rem;  display: flex; flex-direction: column; align-items: flex-start;}
     .main_imgArea > div h2{margin-bottom: 3.750rem;}
-    .main_imgArea > div p{font-size: 1.250rem; line-height: 2.063rem; margin-bottom: 1.875rem;}
+    .main_imgArea > div p{ margin-bottom: 1.875rem; font-size: 1.625rem; line-height: 2.500rem;  letter-spacing: -0.125rem;}
     .main_imgArea > div a{margin-top: auto;}
 
     .layout4::after{content: ''; display: block; clear: both;}
@@ -174,7 +174,7 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-    .noticeBox li a time{font-size: 1.125rem; opacity: 0.5;}
+    .noticeBox li a time{font-size: 1.125rem; opacity: 0.5; letter-spacing: 0.001rem;}
 
     /* 프렌차이즈  - 추천 매장 */
     .franchiseBox{text-align: left;}
@@ -189,7 +189,7 @@
     .storeBox figcaption b{font-size: 1.375rem; position: absolute; right: 0; top: 0;}
     .storeBox figcaption b::after{background-color: black;}
     .storeBox figcaption h3{font-size: 2.250rem; margin-bottom: 1.250rem;}
-    .storeBox figcaption address{font-style: normal; font-size: 1.500rem;}
+    .storeBox figcaption address{font-style: normal; font-size: 1.500rem; line-height: 2rem;}
     .storeBox figcaption address > *{display: block; opacity: 0.7;}
     .storeBox figcaption address > *:first-child{margin-top: 1.875rem;}
     .storeBox figcaption address > *:not(:first-child){margin-top: 0.938rem;}
@@ -207,7 +207,8 @@
 
     .selectBox::after{content: ''; display: block; clear: both;}
     .selectBox > *{float: left;}
-    .selectBox > select:not(:last-of-type){margin-right: 4%; margin-bottom: 0.625rem;}
+    .selectBox > select:not(:last-of-type){margin-right: 4%; margin-bottom: 0.625rem;background-color: #fff9e9;}
+    
     .selectBox select{width: 48%;}
     .selectBox > div{width: 100%; position: relative; }
     .selectBox > div input[type="search"]{width: 100%;}
@@ -225,8 +226,8 @@
     .mainSliderArea .mainSlider > div{background-repeat: no-repeat; background-position: top; background-size: 100%;}
     .mainSliderArea .mainSlider .mainSlider01{/* max-height: 56.875rem; height: 50vw;  */ padding-top: 47vw; display: flex; justify-content: center; align-items: flex-end; background-image: url('../images/main_SliderBG.png');}
     .mainSliderArea .mainSlider .mainSlider01 .textBox{ width: 100%; max-width: 640px; position: relative; }
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > div{background-color: rgba(0, 0, 0, 0.8); border-radius: 6.250rem; color: white; height: 6.875rem; display: flex; justify-content: space-between; align-items: center; padding: 0 3.125rem; margin-bottom: 1.875rem;}
-    .mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 2.875rem; font-weight: 700;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div{background-color: rgba(0, 0, 0, 0.8); border-radius: 6.250rem; color: white; height: 4.875rem; display: flex; justify-content: space-between; align-items: center; padding: 0 3.125rem; margin-bottom: 1.875rem;}
+    .mainSliderArea .mainSlider .mainSlider01 .textBox > div strong{font-size: 2.175rem; font-weight: 700;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderPrev{left: 1.563rem;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div .mainSliderNext{right: 1.563rem;}
     .mainSliderArea .mainSlider .mainSlider01 .textBox > div > div a{font-size: 2.125rem;}
@@ -247,8 +248,8 @@
     .main_menuArea .menuSliderArea .menuSlider.active{display: block;}
     .main_menuArea .menuSliderArea .menuSlider .slider > div{text-align: center; }
     .main_menuArea .menuSliderArea .menuSlider .slider > div img{ width: 100%; max-width: 21.875rem; margin: 0 auto 1.563rem;}
-    .main_menuArea .menuSliderArea .menuSlider .slider > div strong{margin-bottom: 0.938rem;}
-    .main_menuArea .menuSliderArea .menuSlider .slider > div p{ max-width: 15.000rem; margin: 0 auto;}
+    .main_menuArea .menuSliderArea .menuSlider .slider > div strong{margin-bottom: 0.938rem; font-size: 1.7rem;}
+    .main_menuArea .menuSliderArea .menuSlider .slider > div p{ max-width: 30.000rem; margin: 0 auto; font-size: 1.625rem; line-height: 2.500rem; text-align: center; letter-spacing: -0.125rem;}
 
 
     .main_historyArea{background-color: #f2f0e6; position: relative; }
@@ -269,7 +270,7 @@
     /* sub page */
     .subPage > section{padding: 12.500rem 0 6.250rem; text-align: center;}
     .subPage > section h2{font-size: 3.375rem; font-weight: 700; margin-bottom: 1.250rem;}
-    .subPage > section h2 + p{font-size: 1.625rem; font-weight: 500; line-height: 2.500rem; margin-bottom: 4.375rem;}
+    .subPage > section h2 + p{font-size: 1.625rem; font-weight: 500; line-height: 2.500rem; margin-bottom: 4.375rem;padding: 0 2.375rem;}
 
 
     /* sub page - menu*/
@@ -299,7 +300,7 @@
     }
     .aboutArea .titleArea div{max-width: 640px; width: calc(100% - 3.750rem); margin: 0 auto; padding: 6.250rem 0;  box-sizing: border-box; text-align: left;}
     .aboutArea .titleArea div h3{font-size: 5.438rem; font-weight: 400; line-height: 5.938rem; margin-bottom: 3.750rem;}
-    .aboutArea .titleArea div p{font-size: 1.625rem; line-height: 2.500rem; font-weight: 700;}
+    .aboutArea .titleArea div p{font-size: 1.625rem; line-height: 2.500rem; font-weight: 400;}
     .aboutArea .titleArea div p:not(:last-of-type){margin-bottom: 2.500rem;}
 
     .aboutArea h4{font-size: 3.125rem; font-weight: 600;}
@@ -364,7 +365,7 @@
     .questionBox fieldset ul{max-width: 30.000rem; margin: 0 auto; text-align: left; margin-bottom: 3.125rem;}
     .questionBox fieldset ul li{display: flex; justify-content: space-between; align-items: center;}
     .questionBox fieldset ul li.required label::after{content: '*'; display: inline-block; color: #eb0606; vertical-align: bottom;}
-    .questionBox fieldset ul li:not(:last-child){margin-bottom: 1.250rem;}
+    .questionBox fieldset ul li:not(:last-child){margin-bottom: 2.250rem;}
     .questionBox fieldset ul li > label{ width: 6.563rem; font-size: 1.375rem; font-weight: 500;}
     .questionBox fieldset ul li > label + *{ width: calc((100% - 6.250rem) * 0.93); }
     .questionBox fieldset ul li > label + *:not(div){font-size: 1.375rem; font-weight: 400; padding: 0.625rem 0.625rem; box-sizing: border-box; border-width: 0 0 0.063rem 0; border-style: solid; }
