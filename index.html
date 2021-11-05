@@ -492,13 +492,64 @@
                 </div>
         </section>
 
+        <div data-popupName="question">
+            <div>
+                <div class="questionBox">
+                    <form>
+                        <fieldset>
+                            <legend>문의</legend>
+                            <ul>
+                                <li class="required">
+                                    <label for="">문의종류</label>
+                                    <select required>
+                                        <option value="">점포제안</option>
+                                    </select>
+                                </li>
+                                <li class="required">
+                                    <label for="">이름</label>
+                                    <input type="text" placeholder="고객명을 입력하세요" required>
+                                </li>
+                                <li class="required">
+                                    <label for="">연락처</label>
+                                    <input type="text" placeholder="연락처를 입력하세요" required>
+                                </li>
+                                <li class="required">
+                                    <label for="">이메일</label>
+                                    <input type="email" placeholder="이메일 주소를 입력하세요" required>
+                                </li>
+                                <li class="required">
+                                    <label for="">제목</label>
+                                    <input type="text" placeholder="문의 제목을 입력하세요" required>
+                                </li>
+                                <li class="required">
+                                    <label for="">내용</label>
+                                    <input type="text" placeholder="문의 내용을 입력하세요" required>
+                                </li>
+                                <li>
+                                    <label for="">첨부파일</label>
+                                    <div>
+                                        <input type="text" placeholder="파일을 선택하세요" disabled>
+                                        <label for="">파일선택</label>
+                                        <input type="file">
+                                    </div>
+                                </li>
+                            </ul>
+                            <input type="checkbox"><label for="">개인정보 수집 및 이용에 동의합니다.</label>
+                            <input type="submit" value="접수하기">
+                        </fieldset>
+                    </form>
+                </div>
+                <button class="popupClose"><span class="material-icons-outlined">close</span></button>
+            </div>
+        </div>
+
         <footer>
             <div class="width1560">
                 <h2><img src="images/footer_logo.png" alt="리빙 크리스피 롤 로고"></h2>
                 <ul>
                     <li><a href="privacy.html" class="underline">개인정보처리방침</a></li>
                     <!-- <li><a href="#" data-popupclick="question" class="underline">문의</a></li> -->
-                    <li><a href="#" class="underline">문의</a></li>
+                    <li><a href="#" data-popupclick="question" class="underline">문의</a></li>
                 </ul>
                 <address>
                     <p>경기 성남시 분당구 판교역로240 삼환하이펙스A동 121(우)04054</p>

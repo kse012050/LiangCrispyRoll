@@ -247,7 +247,7 @@
     .franchiseArea .joinUsArea ul.joinUsBox li strong{font-size: 30px; font-weight: 700; line-height: 38px;}
     .franchiseArea .joinUsArea ul.joinUsBox li img{position: absolute; bottom: 20px; right: 30px; max-width: 48px;}
 
-    .questionBox{height: 100%; padding: 120px 0; box-sizing: border-box; overflow: auto;}
+    .questionBox{height: 100%; padding: 120px 0; box-sizing: border-box; overflow: auto; text-align: center;}
     .questionBox fieldset legend{font-size: 58px; font-weight: 700; margin-bottom: 70px;}
     .questionBox fieldset ul{max-width: 570px; margin: 0 auto; text-align: left; margin-bottom: 50px;}
     .questionBox fieldset ul li{display: flex; justify-content: space-between; align-items: center;}

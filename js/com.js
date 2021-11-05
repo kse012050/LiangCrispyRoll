@@ -55,6 +55,7 @@ function menuResize(responsiveBoolean){
 
 function popup(){
     $('[data-popupClick="question"]').click(function(e){
+        e.preventDefault();
         var popupName = $(this).attr('data-popupClick');
         $('[data-popupName="'+popupName+'"]').stop().fadeIn();
         $('body').css('overflow','hidden');
