@@ -47,7 +47,7 @@
 
 
     /* header */
-    header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; z-index: 100;}
+    header{position: fixed; left: 0; top: 0; width: 100%; background-color: white; z-index: 100; box-shadow: 5px -20px 40px 0px rgb(0 0 0 / 30%);}
     header > div{height: 6.250rem; display: flex; justify-content: space-between; align-items: center; }
     header > div h1{max-width: 9.063rem; }
     header > div h1 a{display: block; height: 100%; display: flex; align-items: center;}
@@ -361,7 +361,7 @@
     /* .franchiseArea .pageLinkBox{display: none;} */
 
     .questionBox{height: 100%; padding: 6.250rem 0; box-sizing: border-box; overflow: auto;}
-    .questionBox fieldset legend{font-size: 3.125rem; font-weight: 700; margin-bottom: 3.125rem;}
+    .questionBox fieldset legend{font-size: 3.125rem; font-weight: 700; margin-bottom: 3.125rem;text-align: center;}
     .questionBox fieldset ul{max-width: 30.000rem; margin: 0 auto; text-align: left; margin-bottom: 3.125rem;}
     .questionBox fieldset ul li{display: flex; justify-content: space-between; align-items: center;}
     .questionBox fieldset ul li.required label::after{content: '*'; display: inline-block; color: #eb0606; vertical-align: bottom;}
