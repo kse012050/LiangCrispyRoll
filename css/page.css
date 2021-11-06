@@ -95,7 +95,7 @@
 
     .selectBox::after{content: ''; display: block; clear: both;}
     .selectBox > *{float: left;}
-    .selectBox > *:not(:last-child){margin-right: 1.66675%;background-color: #fff9e9;}
+    .selectBox > *:not(:last-child){margin-right: 1.66675%;}
     .selectBox select{width: 21.6666%;}
     .selectBox > div{width: 53.3333%; position: relative;}
     .selectBox > div input[type="search"]{width: 100%;}
@@ -137,9 +137,9 @@
     .main_menuArea ul li.active a{position: relative; z-index: 1;}
 
     .main_menuArea .menuSliderArea .menuSlider{display: none;}
-    .main_menuArea .menuSliderArea .menuSlider.active{display: block;}
+    .main_menuArea .menuSliderArea .menuSlider.active{display: flex; justify-content: center;}
     .main_menuArea .menuSliderArea .menuSlider .slider > div{text-align: center;}
-    .main_menuArea .menuSliderArea .menuSlider .slider > div img{margin-bottom: 25px; width: 100%;}
+    .main_menuArea .menuSliderArea .menuSlider .slider > div img{ width: 100%; max-width: 352px; margin: 0 auto 25px;}
     .main_menuArea .menuSliderArea .menuSlider .slider > div strong{margin-bottom: 20px; /* display: block; font-size: 24px; font-weight: 700;  */}
     .main_menuArea .menuSliderArea .menuSlider .slider > div p{ max-width: 240px; margin: 0 auto; line-height: 20px;/* font-size: 20px; line-height: 28px; letter-spacing: -1.5px; */}
 
@@ -255,9 +255,10 @@
     .questionBox fieldset ul li:not(:last-child){margin-bottom: 60px;}
     .questionBox fieldset ul li > label{ width: 105px; font-size: 26px; font-weight: 500;}
     .questionBox fieldset ul li > label + *{ width: calc((100% - 100px) * 0.93); }
-    .questionBox fieldset ul li > label + *:not(div){font-size: 26px; font-weight: 400; padding: 10px 10px; box-sizing: border-box; border-width: 0 0 1px 0; border-style: solid; }
+    .questionBox fieldset ul li > label + *:not(div){font-family: inherit; font-size: 26px; font-weight: 400; padding: 10px 10px; box-sizing: border-box; border-width: 0 0 1px 0; border-style: solid; }
     .questionBox fieldset ul li > label + select{border-color: black;}
     .questionBox fieldset ul li > label + input{border-color: #cccccc;}
+    .questionBox fieldset ul li > label + textarea{border-color: #cccccc; resize: none; min-height: 115px;}
     .questionBox fieldset ul li > div{display: flex; justify-content: space-between;}
     .questionBox fieldset ul li > div > *{line-height: 46px;}
     .questionBox fieldset ul li > div input[type="file"]{display: none;}

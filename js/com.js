@@ -11,6 +11,8 @@ $(document).ready(function(){
     menu();
     popup();
 
+    menuPage();
+
     $(window).resize(function(){
         menuResize(responsiveBoolean);
     })
@@ -67,4 +69,13 @@ function popup(){
             e.stopPropagation();
         })
     });
+}
+
+
+function menuPage(){
+    if($('.layout3_1 li').length < 2){
+        $('.layout3_1').css({
+            'justify-content' : 'center'
+        })
+    }
 }

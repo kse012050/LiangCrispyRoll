@@ -1,4 +1,13 @@
+html {
+    /* Prevent font scaling in landscape */
+   -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+   -moz-text-size-adjust: none; /*Firefox*/
+   -ms-text-size-adjust: none;  /*Ie*/
+   -o-text-size-adjust: none; /*old versions of Opera*/
+}
+
 @media screen and (min-width:1280px) {
+    body{zoom: 0.7;}
     /* header에서만 사용시 삭제 */
     .width1824{max-width: 1824px; width: calc(100% - 60px); margin: 0 auto;}
     .width1560{max-width: 1560px; width: calc(100% - 60px); margin: 0 auto;}

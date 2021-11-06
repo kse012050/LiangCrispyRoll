@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 function mainSlider(){
     $('.mainSlider').bxSlider({
-        touchEnabled:false,
+        // touchEnabled:false,
         pager:false,
         prevSelector: '.mainSliderPrev',
         prevText: '<span class="material-icons-outlined">chevron_left</span>',
