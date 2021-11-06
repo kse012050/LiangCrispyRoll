@@ -73,7 +73,8 @@ function popup(){
 
 
 function menuPage(){
-    if($('.layout3_1 li').length < 2){
+    console.log($('.layout3_1 li').length);
+    if($('.layout3_1 li').length < 3){
         $('.layout3_1').css({
             'justify-content' : 'center'
         })
